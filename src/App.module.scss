@@ -1,16 +1,72 @@
+$lightPurple: #bea9db;
+$darkPurple: #26004b;
+$blueShadow: #00008bcc;
+$blueShadowSubtle: #00008b66;
+$contentPadding: 5px 10vw;
+$lightText: white;
+
 .navbar {
     display: flex;
-    background-color: plum; 
+    background-color: $lightPurple; 
     justify-content: space-between;
     align-items: center;
-    padding: 5px 5em;
+    padding: $contentPadding;
 
     & h1 {
-        color: white;
+        color: $lightText;
+        text-shadow: -3px 3px 3px $blueShadow;
     }
 
     & img {
         height: 6em;
+    }
+}
+
+
+.main {
+    padding: $contentPadding;
+}
+.whatis {
+    color: $darkPurple;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    & .whatis-section {
+        flex: 2;
+        & .whatis-header {
+            margin: 1em 0 .5em 0;
+    
+        }
+    
+        & .whatis-text {
+            padding: .5em 1em;
+            border: solid 2px $darkPurple;
+            box-shadow: -2px 4px 8px 0 $blueShadowSubtle;
+            border-radius: 1em;
+    
+            & p {
+                margin-bottom: .5em;
+            }
+        }
+    }
+
+
+    & img {
+        flex: 1;
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+.footer {
+    padding: $contentPadding;
+    background-color: $lightPurple;
+    margin-top: 3em;
+
+    & .footer-content {
+        color: $lightText;
+        text-align: right;
     }
 }
 
