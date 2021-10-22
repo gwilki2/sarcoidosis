@@ -1,5 +1,5 @@
 import nssLogo from './assets/_images/nssLogoTransparent.png'
-import sampleImage from './assets/_images/sampleImage.png'
+import sampleImage from './assets/_images/2313_The_Lung_Pleurea.jpg'
 import styles from './App.module.scss'
 
 

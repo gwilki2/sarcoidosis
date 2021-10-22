@@ -1,5 +1,7 @@
 $lightPurple: #bea9db;
-$darkPurple: #26004b;
+$lightPurpleShadow: #bea9db66;
+// $darkPurple: #26004b;
+$darkPurple: rgb(70,41,76);
 $blueShadow: #00008bcc;
 $blueShadowSubtle: #00008b66;
 $contentPadding: 5px 10vw;
@@ -7,14 +9,15 @@ $lightText: white;
 
 .navbar {
     display: flex;
-    background-color: $lightPurple; 
+    background-color: $darkPurple; 
     justify-content: space-between;
     align-items: center;
     padding: $contentPadding;
 
     & h1 {
         color: $lightText;
-        text-shadow: -3px 3px 3px $blueShadow;
+        text-shadow: -3px 3px 2px $lightPurpleShadow;
+        font-size: 3em;
     }
 
     & img {
@@ -42,7 +45,7 @@ $lightText: white;
         & .whatis-text {
             padding: .5em 1em;
             border: solid 2px $darkPurple;
-            box-shadow: -2px 4px 8px 0 $blueShadowSubtle;
+            box-shadow: -3px 3px 6px 0 #00000088;
             border-radius: 1em;
     
             & p {
@@ -61,7 +64,7 @@ $lightText: white;
 
 .footer {
     padding: $contentPadding;
-    background-color: $lightPurple;
+    background-color: $darkPurple;
     margin-top: 3em;
 
     & .footer-content {
