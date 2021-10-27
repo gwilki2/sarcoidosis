@@ -1,7 +1,11 @@
 import nssLogo from './assets/_images/nssLogoTransparent.png'
 import sampleImage from './assets/_images/2313_The_Lung_Pleurea.jpg'
 import styles from './App.module.scss'
-import '@fortawesome/fontawesome-pro/js/all'
+import '@fortawesome/fontawesome-free/js/all'
+//import '@fortawesome/fontawesome-pro/js/all'
+
+// <h3><i className="fad fa-hands-usd"></i> Give</h3>
+// <h3><i class="fad fa-inbox-in"></i> Contact Us</h3>
 
 function App() {
   return (
@@ -13,8 +17,8 @@ function App() {
           <h1>Sarcoidosis4TheArts.org</h1>
         </div>
         <div className={styles['right-nav']}>
-          <h3><i class="fad fa-inbox-in"></i> Contact Us</h3>
-          <h3><i className="fad fa-hands-usd"></i> Give</h3>
+          <h3><i class="fas fa-inbox"></i> Contact Us</h3>
+          <h3><i class="fas fa-hand-holding-usd"></i> Give</h3>
         </div>
       </header>
 
