@@ -3,7 +3,6 @@ import sampleImage from './assets/_images/2313_The_Lung_Pleurea.jpg'
 import styles from './App.module.scss'
 import '@fortawesome/fontawesome-pro/js/all'
 
-
 function App() {
   return (
     <div className="App">
