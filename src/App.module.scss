@@ -13,9 +13,9 @@ $lightText: white;
     justify-content: space-between;
     align-items: center;
     padding: $contentPadding;
+    color: $lightText;
 
     & h1 {
-        color: $lightText;
         text-shadow: -3px 3px 2px $lightPurpleShadow;
         font-size: 3em;
     }
@@ -24,6 +24,23 @@ $lightText: white;
         height: 6em;
     }
 }
+
+.right-nav, .left-nav {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.right-nav h3 {
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:hover {
+        transform: scale(1.1) translateY(-3px);
+    }
+}
+
+
 
 
 .main {
@@ -63,6 +80,9 @@ $lightText: white;
 }
 
 .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
     padding: $contentPadding;
     background-color: $darkPurple;
     margin-top: 3em;

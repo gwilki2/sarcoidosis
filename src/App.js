@@ -1,6 +1,7 @@
 import nssLogo from './assets/_images/nssLogoTransparent.png'
 import sampleImage from './assets/_images/2313_The_Lung_Pleurea.jpg'
 import styles from './App.module.scss'
+import '@fortawesome/fontawesome-pro/js/all'
 
 
 function App() {
@@ -8,8 +9,14 @@ function App() {
     <div className="App">
       
       <header className={styles.navbar}>
-        <h1>Sarcoidosis4TheArts.org</h1>
-        <img src={nssLogo} alt="Logo" />
+        <div className={styles['left-nav']}>
+          <img src={nssLogo} alt="Logo" />
+          <h1>Sarcoidosis4TheArts.org</h1>
+        </div>
+        <div className={styles['right-nav']}>
+          <h3><i class="fad fa-inbox-in"></i> Contact Us</h3>
+          <h3><i className="fad fa-hands-usd"></i> Give</h3>
+        </div>
       </header>
 
       <main className={styles.main}>
